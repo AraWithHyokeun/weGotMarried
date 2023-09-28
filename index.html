@@ -73,6 +73,10 @@ $(document).ready(function(){
             el: ".swiper-pagination",
             dynamicBullets: true,
         },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
     });
 
     swiper.autoplay.stop();
@@ -402,6 +406,9 @@ body.off{overflow: hidden;}
 
 .share_box {position:fixed;bottom:50px;right:50px;text-align:center;z-index: 10;}
 .share_box img {margin-bottom:5px;}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {color:#974d02;padding:5px;/* background: rgba(255,255,255,0.65); */}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {color:#974d02;padding:5px;/* background: rgba(255,255,255,0.65); */}
 
 @media (max-width: 750px)  {
     img {width:100%;}
@@ -895,6 +902,8 @@ body.off{overflow: hidden;}
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next swiper_arr"></div>
+                    <div class="swiper-button-prev swiper_arr"></div>
                 </div>
                 <!-- <div class="btn_point box">
                     ※ 앨범 형식으로 제작되었습니다.
